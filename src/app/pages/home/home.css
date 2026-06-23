@@ -1,0 +1,31 @@
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #facc15;
+  width: 0;
+  animation:
+    typing 8s steps(25, end) infinite,
+    blink .6s infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 80%;
+  }
+  60% {
+    width: 47%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
