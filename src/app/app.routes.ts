@@ -7,7 +7,19 @@ export const routes: Routes = [
     },
     {
         path : 'skills',
-        loadComponent : () => import ('./pages/skills/skills')
+        loadComponent : () => import ('./pages/skills/skills'),
+        children: [
+            {path: 'frontend',
+                loadComponent : () => import ('./components/skills/frontend/frontend')
+            },{
+                path : 'backend',
+                loadComponent : () => import('./components/skills/backend/backend')
+            },{
+                path : 'tools',
+                loadComponent : () => import('./components/skills/tools/tools')
+            }
+            
+        ]
     },
     {
         path :'experience',
