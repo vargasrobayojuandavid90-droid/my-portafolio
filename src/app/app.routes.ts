@@ -17,6 +17,11 @@ export const routes: Routes = [
             },{
                 path : 'tools',
                 loadComponent : () => import('./components/skills/tools/tools')
+            },{
+                path : '**',
+                redirectTo : () => {
+                    return 'frontend';
+                }
             }
             
         ]
