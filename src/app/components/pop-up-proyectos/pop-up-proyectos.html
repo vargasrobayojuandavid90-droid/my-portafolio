@@ -1,0 +1,544 @@
+@if (isOpen) {
+
+<div
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4"
+    (click)="closePopup()">
+
+    <div
+        (click)="$event.stopPropagation()"
+        class="relative w-full max-w-7xl h-[90vh]
+               rounded-3xl
+               border border-[#2B2F3A]
+               bg-[#181A20]
+               shadow-[0_25px_80px_rgba(0,0,0,.45)]
+               overflow-hidden
+               animate-fade">
+
+
+        <div
+            class="sticky top-0 z-20
+                   border-b border-[#2B2F3A]
+                   bg-[#181A20]/90
+                   backdrop-blur-md
+                   px-8 py-6">
+
+            <button
+                (click)="closePopup()"
+                class="absolute right-8 top-6
+                       flex h-11 w-11 items-center justify-center
+                       rounded-xl
+                       border border-[#2B2F3A]
+                       text-gray-400
+                       transition
+                       hover:border-yellow-400
+                       hover:bg-yellow-400
+                       hover:text-black">
+
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12" />
+
+                </svg>
+
+            </button>
+
+           
+
+            <h2
+                class="mt-2 text-4xl font-bold text-white">
+
+                Todos mis
+                <span class="text-yellow-400">
+                    proyectos
+                </span>
+
+            </h2>
+
+            <p class="mt-2 text-gray-400 max-w-2xl">
+
+                Una colección de proyectos desarrollados utilizando tecnologías
+                modernas, enfocadas en rendimiento, experiencia de usuario y
+                escalabilidad.
+
+            </p>
+
+        </div>
+
+       
+
+        <div
+            class="h-[calc(90vh-170px)]
+                   overflow-y-auto
+                   px-8 py-8">
+
+            <div
+                class="grid grid-cols-1
+                       md:grid-cols-2
+                       xl:grid-cols-3
+                       gap-7">
+
+                
+
+                <div
+                    class="group rounded-2xl
+                           border border-[#2B2F3A]
+                           bg-[#1D1F27]
+                           overflow-hidden
+                           transition-all duration-300
+                           hover:-translate-y-2
+                           hover:border-yellow-400/40
+                           hover:shadow-[0_15px_40px_rgba(242,201,76,.08)]">
+
+                    <!-- Imagen -->
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="assets/proyecto_1.png"
+                            alt="Proyecto"
+                            class="h-48 w-full object-cover
+                                   transition duration-500
+                                   group-hover:scale-105">
+
+                    </div>
+
+                    <!-- Información -->
+
+                    <div class="p-5">
+
+                        <h3
+                            class="text-xl font-semibold text-white">
+
+                            Sistema de Gestión
+
+                        </h3>
+
+                        <p
+                            class="mt-3 text-sm text-gray-400 leading-6">
+
+                            Aplicación Full Stack para gestionar tareas,
+                            usuarios y proyectos mediante una interfaz moderna
+                            y totalmente responsiva.
+
+                        </p>
+
+                        <!-- Tecnologías -->
+
+                        <div
+                            class="mt-5 flex flex-wrap gap-2">
+
+                            <span
+                                class="rounded-full bg-yellow-400/10
+                                       px-3 py-1
+                                       text-xs text-yellow-400">
+
+                                Angular
+
+                            </span>
+
+                            <span
+                                class="rounded-full bg-yellow-400/10
+                                       px-3 py-1
+                                       text-xs text-yellow-400">
+
+                                Spring Boot
+
+                            </span>
+
+                            <span
+                                class="rounded-full bg-yellow-400/10
+                                       px-3 py-1
+                                       text-xs text-yellow-400">
+
+                                Tailwind CSS
+
+                            </span>
+
+                        </div>
+
+                        <!-- Botones -->
+
+                        <div
+                            class="mt-6 flex gap-3">
+
+                            <button
+                                class="flex-1 h-11 rounded-xl
+                                       border border-yellow-400
+                                       text-white
+                                       transition
+                                       hover:bg-yellow-400
+                                       hover:text-black">
+
+                                Demo
+
+                            </button>
+
+                            <button
+                                class="flex-1 h-11 rounded-xl
+                                       bg-yellow-400
+                                       text-black
+                                       font-medium
+                                       transition
+                                       hover:brightness-110">
+
+                                Detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+<div
+                    class="group rounded-2xl
+                           border border-[#2B2F3A]
+                           bg-[#1D1F27]
+                           overflow-hidden
+                           transition-all duration-300
+                           hover:-translate-y-2
+                           hover:border-yellow-400/40
+                           hover:shadow-[0_15px_40px_rgba(242,201,76,.08)]">
+
+                    <!-- Imagen -->
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="assets/proyecto_1.png"
+                            alt="Proyecto"
+                            class="h-48 w-full object-cover
+                                   transition duration-500
+                                   group-hover:scale-105">
+
+                    </div>
+
+                    <!-- Información -->
+
+                    <div class="p-5">
+
+                        <h3
+                            class="text-xl font-semibold text-white">
+
+                            Sistema de Gestión
+
+                        </h3>
+
+                        <p
+                            class="mt-3 text-sm text-gray-400 leading-6">
+
+                            Aplicación Full Stack para gestionar tareas,
+                            usuarios y proyectos mediante una interfaz moderna
+                            y totalmente responsiva.
+
+                        </p>
+
+                        <!-- Tecnologías -->
+
+                        <div
+                            class="mt-5 flex flex-wrap gap-2">
+
+                            <span
+                                class="rounded-full bg-yellow-400/10
+                                       px-3 py-1
+                                       text-xs text-yellow-400">
+
+                                Angular
+
+                            </span>
+
+                            <span
+                                class="rounded-full bg-yellow-400/10
+                                       px-3 py-1
+                                       text-xs text-yellow-400">
+
+                                Spring Boot
+
+                            </span>
+
+                            <span
+                                class="rounded-full bg-yellow-400/10
+                                       px-3 py-1
+                                       text-xs text-yellow-400">
+
+                                Tailwind CSS
+
+                            </span>
+
+                        </div>
+
+                        <!-- Botones -->
+
+                        <div
+                            class="mt-6 flex gap-3">
+
+                            <button
+                                class="flex-1 h-11 rounded-xl
+                                       border border-yellow-400
+                                       text-white
+                                       transition
+                                       hover:bg-yellow-400
+                                       hover:text-black">
+
+                                Demo
+
+                            </button>
+
+                            <button
+                                class="flex-1 h-11 rounded-xl
+                                       bg-yellow-400
+                                       text-black
+                                       font-medium
+                                       transition
+                                       hover:brightness-110">
+
+                                Detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div
+                    class="group rounded-2xl
+                           border border-[#2B2F3A]
+                           bg-[#1D1F27]
+                           overflow-hidden
+                           transition-all duration-300
+                           hover:-translate-y-2
+                           hover:border-yellow-400/40
+                           hover:shadow-[0_15px_40px_rgba(242,201,76,.08)]">
+
+                    <!-- Imagen -->
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="assets/proyecto_1.png"
+                            alt="Proyecto"
+                            class="h-48 w-full object-cover
+                                   transition duration-500
+                                   group-hover:scale-105">
+
+                    </div>
+
+                    <!-- Información -->
+
+                    <div class="p-5">
+
+                        <h3
+                            class="text-xl font-semibold text-white">
+
+                            Sistema de Gestión
+
+                        </h3>
+
+                        <p
+                            class="mt-3 text-sm text-gray-400 leading-6">
+
+                            Aplicación Full Stack para gestionar tareas,
+                            usuarios y proyectos mediante una interfaz moderna
+                            y totalmente responsiva.
+
+                        </p>
+
+                        <!-- Tecnologías -->
+
+                        <div
+                            class="mt-5 flex flex-wrap gap-2">
+
+                            <span
+                                class="rounded-full bg-yellow-400/10
+                                       px-3 py-1
+                                       text-xs text-yellow-400">
+
+                                Angular
+
+                            </span>
+
+                            <span
+                                class="rounded-full bg-yellow-400/10
+                                       px-3 py-1
+                                       text-xs text-yellow-400">
+
+                                Spring Boot
+
+                            </span>
+
+                            <span
+                                class="rounded-full bg-yellow-400/10
+                                       px-3 py-1
+                                       text-xs text-yellow-400">
+
+                                Tailwind CSS
+
+                            </span>
+
+                        </div>
+
+                        <!-- Botones -->
+
+                        <div
+                            class="mt-6 flex gap-3">
+
+                            <button
+                                class="flex-1 h-11 rounded-xl
+                                       border border-yellow-400
+                                       text-white
+                                       transition
+                                       hover:bg-yellow-400
+                                       hover:text-black">
+
+                                Demo
+
+                            </button>
+
+                            <button
+                                class="flex-1 h-11 rounded-xl
+                                       bg-yellow-400
+                                       text-black
+                                       font-medium
+                                       transition
+                                       hover:brightness-110">
+
+                                Detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div
+                    class="group rounded-2xl
+                           border border-[#2B2F3A]
+                           bg-[#1D1F27]
+                           overflow-hidden
+                           transition-all duration-300
+                           hover:-translate-y-2
+                           hover:border-yellow-400/40
+                           hover:shadow-[0_15px_40px_rgba(242,201,76,.08)]">
+
+                    <!-- Imagen -->
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="assets/proyecto_1.png"
+                            alt="Proyecto"
+                            class="h-48 w-full object-cover
+                                   transition duration-500
+                                   group-hover:scale-105">
+
+                    </div>
+
+                    <!-- Información -->
+
+                    <div class="p-5">
+
+                        <h3
+                            class="text-xl font-semibold text-white">
+
+                            Sistema de Gestión
+
+                        </h3>
+
+                        <p
+                            class="mt-3 text-sm text-gray-400 leading-6">
+
+                            Aplicación Full Stack para gestionar tareas,
+                            usuarios y proyectos mediante una interfaz moderna
+                            y totalmente responsiva.
+
+                        </p>
+
+                        <!-- Tecnologías -->
+
+                        <div
+                            class="mt-5 flex flex-wrap gap-2">
+
+                            <span
+                                class="rounded-full bg-yellow-400/10
+                                       px-3 py-1
+                                       text-xs text-yellow-400">
+
+                                Angular
+
+                            </span>
+
+                            <span
+                                class="rounded-full bg-yellow-400/10
+                                       px-3 py-1
+                                       text-xs text-yellow-400">
+
+                                Spring Boot
+
+                            </span>
+
+                            <span
+                                class="rounded-full bg-yellow-400/10
+                                       px-3 py-1
+                                       text-xs text-yellow-400">
+
+                                Tailwind CSS
+
+                            </span>
+
+                        </div>
+
+                        <!-- Botones -->
+
+                        <div
+                            class="mt-6 flex gap-3">
+
+                            <button
+                                class="flex-1 h-11 rounded-xl
+                                       border border-yellow-400
+                                       text-white
+                                       transition
+                                       hover:bg-yellow-400
+                                       hover:text-black">
+
+                                Demo
+
+                            </button>
+
+                            <button
+                                class="flex-1 h-11 rounded-xl
+                                       bg-yellow-400
+                                       text-black
+                                       font-medium
+                                       transition
+                                       hover:brightness-110">
+
+                                Detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+}

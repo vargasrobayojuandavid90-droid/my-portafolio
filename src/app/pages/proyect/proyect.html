@@ -7,7 +7,8 @@
                 Algunos de los proyectos en los que he trabajado recientemente 
             </p>
             <div class="mt-8 flex  justify-center lg:justify-start">
-                <a class="border border-gray-100 px-6 py-2 rounded-lg  hover:border-yellow-400 hover:text-yellow-400 transition duration-300"> ver todos los proyectos </a>
+                <button class="border border-gray-100 px-6 py-2 rounded-lg  hover:border-yellow-400 hover:text-yellow-400 transition duration-300"
+                (click)="openPopup()"> ver todos los proyectos </button>
             </div>
         </div>
         <div class="lg:col-span-8">
@@ -105,7 +106,7 @@
 
 </div>
 <div
-    class="group grid lg:grid-cols-[50px_1fr_180px]
+    class="group grid lg:grid-cols-[180px_1fr_50px]
     gap-4
     items-center
     rounded-xl
@@ -118,34 +119,14 @@
 
     
    
-       <div class="flex justify-center">
+     <div class="overflow-hidden rounded-lg">
 
-        <button
-            class="w-10 h-10 rounded-full
-                   border border-gray-700
-                   flex items-center justify-center
-                   text-white
-                   group-hover:bg-yellow-400
-                   group-hover:text-black
-                   group-hover:border-yellow-400
-                   transition-all duration-300">
-
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-4 h-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"/>
-
-            </svg>
-
-        </button>
+        <img
+            src="assets/proyecto_1.png"
+            alt="Proyecto principal"
+            class="w-full h-28 object-cover rounded-lg
+                   group-hover:scale-105
+                   transition duration-500">
 
     </div>
 
@@ -183,14 +164,35 @@
 
     </div>
 
-     <div class="overflow-hidden rounded-lg">
+     
+      <div class="flex justify-center">
 
-        <img
-            src="assets/proyecto_1.png"
-            alt="Proyecto principal"
-            class="w-full h-28 object-cover rounded-lg
-                   group-hover:scale-105
-                   transition duration-500">
+        <button
+            class="w-10 h-10 rounded-full
+                   border border-gray-700
+                   flex items-center justify-center
+                   text-white
+                   group-hover:bg-yellow-400
+                   group-hover:text-black
+                   group-hover:border-yellow-400
+                   transition-all duration-300">
+
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"/>
+
+            </svg>
+
+        </button>
 
     </div>
 
@@ -291,7 +293,7 @@
     </div>
     
         </div>
-       
+       <app-pop-up-proyectos [isOpen]="showPopup"  (close)="closePopup()"></app-pop-up-proyectos>
     </div>
 
 </section>
