@@ -2,9 +2,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from "@angular/router";
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-nav-bar',
   imports: [RouterLink, RouterLinkActive],
-  templateUrl: './footer.html',
+  templateUrl: './nav-bar.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Footer {}
+export class navbar {
+
+}

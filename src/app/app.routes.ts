@@ -36,6 +36,9 @@ export const routes: Routes = [
         path : 'contact' ,
         loadComponent : () => import ('./pages/contact/contact')
     },{
+        path :'about-me',
+        loadComponent : () => import('./pages/about-me/about-me')
+    },{
         path : '**',
         redirectTo : ()=> {
             return 'home';

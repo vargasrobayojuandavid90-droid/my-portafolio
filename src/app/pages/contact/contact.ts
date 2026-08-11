@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ContactForm } from "../../components/contact-form/contact-form";
 
 @Component({
   selector: 'app-contact',
-  imports: [],
+  imports: [ContactForm],
   templateUrl: './contact.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

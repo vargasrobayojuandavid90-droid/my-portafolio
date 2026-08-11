@@ -1,0 +1,235 @@
+ <form
+        class="rounded-3xl
+               border border-[#2B2F3A]
+               bg-[#181A20]
+               p-2 lg:p-8 ">
+
+        <div
+            class="grid md:grid-cols-2 gap-3">
+
+            
+
+            <div>
+
+                <label
+                    class="text-sm text-gray-400">
+
+                    Nombre
+
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Juan David"
+
+                    class="mt-2 w-full
+                           rounded-xl
+                           border border-[#2B2F3A]
+                           bg-[#20232C]
+                           px-5 py-2
+                           text-white
+                           placeholder:text-gray-500
+                           outline-none
+                           transition
+                           focus:border-yellow-400">
+
+            </div>
+
+            <!-- Correo -->
+
+            <div>
+
+                <label
+                    class="text-sm text-gray-400">
+
+                    Correo electrónico
+
+                </label>
+
+                <input
+                    type="email"
+                    placeholder="correo@ejemplo.com"
+
+                    class="mt-2 w-full
+                           rounded-xl
+                           border border-[#2B2F3A]
+                           bg-[#20232C]
+                           px-5 py-2
+                           text-white
+                           placeholder:text-gray-500
+                           outline-none
+                           transition
+                           focus:border-yellow-400">
+
+            </div>
+
+            <!-- Empresa -->
+
+            <div>
+
+                <label
+                    class="text-sm text-gray-400">
+
+                    Empresa
+
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Nombre de la empresa"
+
+                    class="mt-2 w-full
+                           rounded-xl
+                           border border-[#2B2F3A]
+                           bg-[#20232C]
+                           px-5 py-2
+                           text-white
+                           outline-none
+                           transition
+                           focus:border-yellow-400">
+
+            </div>
+
+          
+
+            <div>
+
+                <label
+                    class="text-sm text-gray-400">
+
+                    Tipo de proyecto
+
+                </label>
+
+                <select
+
+                    class="mt-2 w-full
+                           rounded-xl
+                           border border-[#2B2F3A]
+                           bg-[#20232C]
+                           px-5 py-2
+                           text-white
+                           outline-none
+                           transition
+                           focus:border-yellow-400">
+
+                    <option>Landing Page</option>
+
+                    <option>Aplicación Web</option>
+
+                    <option>E-commerce</option>
+
+                    <option>API REST</option>
+
+                    <option>Otro</option>
+
+                </select>
+
+            </div>
+
+            
+
+            <div class="md:col-span-2">
+
+                <label
+                    class="text-sm text-gray-400">
+
+                    Presupuesto aproximado
+
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="$"
+
+                    class="mt-2 w-full
+                           rounded-xl
+                           border border-[#2B2F3A]
+                           bg-[#20232C]
+                           px-5 py-2
+                           text-white
+                           outline-none
+                           transition
+                           focus:border-yellow-400">
+
+            </div>
+
+            <!-- Mensaje -->
+
+            <div class="md:col-span-2">
+
+                <label
+                    class="text-sm text-gray-400">
+
+                    Cuéntame sobre tu proyecto
+
+                </label>
+
+                <textarea
+
+                    rows="7"
+
+                    placeholder="Describe brevemente tu proyecto..."
+
+                    class="mt-2 w-full
+                           rounded-xl
+                           border border-[#2B2F3A]
+                           bg-[#20232C]
+                           px-5 py-1
+                           text-white
+                           resize-none
+                           outline-none
+                           transition
+                           focus:border-yellow-400">
+
+                </textarea>
+
+            </div>
+
+        </div>
+
+        <!-- Botones -->
+
+        <div
+            class="mt-5
+                   flex flex-col-reverse
+                   sm:flex-row
+                   justify-end
+                   gap-4">
+
+            <button
+
+                type="reset"
+
+                class="rounded-xl
+                       border border-[#2B2F3A]
+                       px-8 py-2
+                       text-white
+                       transition
+                       hover:border-yellow-400
+                       hover:text-yellow-400">
+
+                Limpiar
+
+            </button>
+
+            <button
+
+                type="submit"
+
+                class="rounded-xl
+                       bg-yellow-400
+                       px-8 py-2
+                       font-semibold
+                       text-black
+                       transition-all
+                       hover:scale-[1.03]
+                       hover:shadow-[0_0_25px_rgba(242,201,76,.35)]">
+
+                Enviar proyecto →
+
+            </button>
+
+        </div>
+
+    </form>
